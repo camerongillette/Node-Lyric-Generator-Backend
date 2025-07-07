@@ -1,6 +1,12 @@
-# Metal Lyric Generator Backend
+# Node Lyric Generator Backend
 
 A Node.js backend service that provides API endpoints for generating metal lyrics built from the lyrics of an existing band. This service uses GraphQL and REST endpoints to serve its functionality.
+
+## Quick Start
+- Copy the 'example.env' file and rename to '.env' and then add your OPEN_AI_TOKEN in that file
+- run 'npm install' and then 'npm run dev'
+- Open http://localhost:3000/lyricgenerator/sleeptoken?topicId=1
+
 
 ## Features
 
