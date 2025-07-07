@@ -1,5 +1,5 @@
 import express from 'express';
-import { generateLyrics } from '../utils/openaiClient.js';
+import { generateLyrics } from '../middleware/openaiClient.js';
 import { topics } from '../utils/topics.js';
 
 const router = express.Router();

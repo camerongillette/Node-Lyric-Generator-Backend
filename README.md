@@ -1,6 +1,6 @@
 # Node Lyric Generator Backend
 
-A Node.js backend service that provides API endpoints for generating metal lyrics built from the lyrics of an existing band. This service uses GraphQL and REST endpoints to serve its functionality.
+A Node.js backend service that provides REST API endpoints for generating metal lyrics built from the lyrics from the OpenAI LLM. 
 
 ## Quick Start
 - Copy the 'example.env' file and rename to '.env' and then add your OPEN_AI_TOKEN in that file
@@ -45,35 +45,14 @@ npm run dev
 ```bash
 npm start
 ```
+The server will start on http://localhost:3000
 
-The server will start on http://localhost:3000 (or the port specified in your .env file)
 
-
-## Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn package manager
-
-## API Endpoints
-
-### GraphQL Endpoint
-- URL: `/lyricgeneratorql`
-- Method: POST
-- Description: Main GraphQL endpoint for lyric generation
-
-### Sleep Token Endpoint
+## API Endpoint
 - URL: `/lyricgenerator/sleeptoken`
 - Method: POST
 - Description: Endpoint for managing lyric generation
 
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## License
 
