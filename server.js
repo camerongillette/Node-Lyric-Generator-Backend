@@ -2,9 +2,6 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import helmet from 'helmet';
-import { createHandler } from 'graphql-http/lib/use/express';
-import { schema } from './graphql/schema.js';
-import { resolvers as rootValue } from './graphql/resolvers.js';
 import { SecurityHeadersMiddleware } from './middleware/SecurityHeadersMiddleware.js';
 import { rateLimiter } from './middleware/rateLimiter.js';
 import sleeptokenRouter from './routes/sleeptoken.js';
@@ -21,9 +18,6 @@ app.use(SecurityHeadersMiddleware);
 app.use(express.json());
 
 app.use('/lyricgenerator/sleeptoken', rateLimiter, sleeptokenRouter);
-
-app.use('/lyricgeneratorql', createHandler({ schema, rootValue }));
-
 
 app.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`);
