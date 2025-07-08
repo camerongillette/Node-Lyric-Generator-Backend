@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import { chorusExamples } from '../utils/chorusExamples.js';
+import { chorusExamples } from '../utils/chorusExamplesAndTopics.js';
 
 export async function generateLyricsOllama(topic, bandName) {
   const prompt = `Generate a lyrically poetic and emotionally evocative chorus inspired by the style of Sleep Token. Do not include any text other than the lyrics. Do not include a synopsis or intro or explanation.

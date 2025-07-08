@@ -65,3 +65,14 @@ const choruses = [
 ];
 
 export const chorusExamples = choruses.map((chorus, i) => `Chorus ${i + 1}:\n${chorus}`).join("\n\n"); 
+
+export const topics = {
+  0: "ANY TOPIC",
+  1: "LOVE",
+  2: "DEATH",
+  3: "BREAK UP",
+  4: "LONELINESS",
+  5: "BETRAYAL",
+  6: "HEARTBREAK",
+  7: "MANIPULATION"
+}; 

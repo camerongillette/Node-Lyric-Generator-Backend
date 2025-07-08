@@ -2,8 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import helmet from 'helmet';
-import { SecurityHeadersMiddleware } from './middleware/SecurityHeadersMiddleware.js';
-import { rateLimiter } from './middleware/rateLimiter.js';
+import { rateLimiter,SecurityHeadersMiddleware } from './middleware/rateLimiterAndSecurityHeaders.js';
 import lyricGeneratorRouter from './routes/lyricGenerator.js';
 
 // Load environment variables from .env file

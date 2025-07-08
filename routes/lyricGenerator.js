@@ -1,7 +1,7 @@
 import express from 'express';
 import { generateLyrics } from '../middleware/openaiClient.js';
 import { generateLyricsOllama } from '../middleware/ollamaClient.js';
-import { topics } from '../utils/topics.js';
+import { topics } from '../utils/chorusExamplesAndTopics.js';
 
 const router = express.Router();
 

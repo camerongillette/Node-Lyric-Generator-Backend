@@ -1,12 +1,11 @@
 # Node Lyric Generator Backend
 
-A Node.js backend service that provides REST API endpoints for generating metal lyrics built from the lyrics from the OpenAI LLM. 
+A Node.js backend service that provides REST API endpoints for generating  lyrics from the OpenAI LLM or a local Ollama LLM. 
 
 ## Quick Start
 - Copy the 'example.env' file and rename to '.env' and then add your OPEN_AI_TOKEN in that file
 - run 'npm install' and then 'npm run dev'
 - Open http://localhost:3000/lyricgenerator/sleeptoken?topicId=1
-
 
 ## Features
 
@@ -20,7 +19,7 @@ A Node.js backend service that provides REST API endpoints for generating metal 
 1. Clone the repository:
 ```bash
 git clone [repository-url]
-cd metal-lyric-generator-backend-node
+cd node-lyric-generator-backend-node
 ```
 
 2. Install dependencies:
@@ -41,19 +40,6 @@ FRONTEND_URLS=http://localhost:3000,http://your-frontend-url.com
 npm run dev
 ```
 
-### Production Mode
-```bash
-npm start
-```
-The server will start on http://localhost:3000
-
-
 ## API Endpoint
 - URL: `/lyricgenerator/sleeptoken`
 - Method: POST
-- Description: Endpoint for managing lyric generation
-
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
