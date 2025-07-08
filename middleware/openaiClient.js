@@ -1,9 +1,9 @@
 import { OpenAI } from 'openai';
-import { chorusExamples } from '../utils/chorusExamples.js';
+import { chorusExamples } from '../utils/chorusExamplesAndTopics.js';
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-export async function generateLyrics(bandName, topic) {
+export async function generateLyrics(topic) {
   const prompt = `Generate a lyrically poetic and emotionally evocative chorus inspired by the style of Sleep Token...
 Here are some examples of choruses from the band's top 8 songs:
 
