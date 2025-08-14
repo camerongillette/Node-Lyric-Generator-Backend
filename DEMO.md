@@ -7,9 +7,6 @@ copy the example.env file and rename to just to just .env
 
 Then set the openAi key variable in that file to :
 
-sk-proj
-
--Z4UTzrmXq1X3l1BPTYwcE4LYjyZIjGJLMQbwTW3CCT5EWFmzn15QguGCxuqeEWmHMF285FKW2KT3BlbkFJJCEK1C4l-w6rpn5eQv9xIt6GKRjtsGBfG9tcpobsRE4tLsFsHv5GAwmwjkULTnMraB78IlKk4A
 
 So it will look like this :
 
