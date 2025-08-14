@@ -39,7 +39,7 @@ Ollama pull ollama3
 ------
 
 Repos
-https://github.com/camerongillette/Node-Lyric-Generator-Backend/tree/Ollama 
+https://github.com/camerongillette/Node-Lyric-Generator-Backend 
 
 https://github.com/camerongillette/React-AI-Lyric-Generator-Frontend/tree/simpleFrontend
 
